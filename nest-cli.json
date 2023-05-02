@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "entryFile": "server.js",
+  "compilerOptions": {
+    "assets": [
+      {
+        "include": "../nlm/",
+        "outDir": "dist/nlm",
+        "watchAssets": true
+      },
+      {
+        "include": "../node_modules/@jats4r/schematrons/schematrons/1.0/*",
+        "outDir": "dist/schematrons",
+        "watchAssets": true
+      }
+    ],
+    "watchAssets": true
+  }
+}
